@@ -28,7 +28,7 @@ const convertToJson = (cvsPathFile='customer-data.csv') => {
         }
         else
         {
-            fs.writeFileSync(path.join(__dirname, 'data.json'),JSON.stringify(data))
+            fs.writeFileSync(path.join(__dirname, 'customer-data.json'),JSON.stringify(data))
             console.log('New Json file saved.')
         }
         global.process.exit(0)
